@@ -1,2 +1,2 @@
-#RoRs applm. 2
+#RoRs appln. 2
 ....by[*R. vinob chander*]()
