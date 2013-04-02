@@ -1,0 +1,25 @@
+<%= form_for(@shortpost) do |f| %>
+  <% if @shortpost.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@shortpost.errors.count, "error") %> prohibited this shortpost from being saved:</h2>
+
+      <ul>
+      <% @shortpost.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :spost %><br />
+    <%= f.text_field :spost %>
+  </div>
+  <div class="field">
+    <%= f.label :usr_id %><br />
+    <%= f.number_field :usr_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
